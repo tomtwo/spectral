@@ -1,0 +1,11 @@
+[build]
+  base    = ""
+  publish = "public/"
+  command = "yarn build"
+  functions = "src/functions/"
+
+# The following redirect is intended for use with most SPA's that handles routing internally.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
